@@ -4,6 +4,7 @@ FROM alpine:latest
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
 RUN apk add --update curl
+RUN apk add --update apt-get
 RUN apt-get update
 RUN apt-get install libc6-i386
 
