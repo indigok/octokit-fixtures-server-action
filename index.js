@@ -19,10 +19,7 @@ async function main() {
 
 			exec.exec(`bin/server.js`);
 			console.log("server!")
-		}).catch (error) {
-			console.log(error)
-			core.setFailed(error.message);
-		}
+		})
 	} catch (error) {
 		console.log(error)
 		core.setFailed(error.message);
