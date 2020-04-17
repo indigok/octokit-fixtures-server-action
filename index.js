@@ -19,7 +19,10 @@ async function main() {
 
 			exec.exec(`octokit-fixtures-server`);
 			console.log("server!")
-		})
+		}).catch (error) {
+			console.log(error)
+			core.setFailed(error.message);
+		}
 	} catch (error) {
 		console.log(error)
 		core.setFailed(error.message);
