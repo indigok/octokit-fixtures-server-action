@@ -3715,7 +3715,7 @@ async function main() {
 		}).on('response', function(response) {
 			console.log(response.statusCode) // 200
 
-			exec.exec(`bin/server.js`);
+			exec.exec(`octokit-fixtures-server`);
 			console.log("server!")
 		})
 	} catch (error) {
