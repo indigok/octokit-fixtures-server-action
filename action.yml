@@ -2,4 +2,4 @@ name: 'Octokit Fixtures Server'
 description: 'Starts the fixtures server for Octokit'
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'dist/index.js'
